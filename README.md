@@ -30,8 +30,8 @@
 
     pacman -S mingw-w64-x86_64-freeglut
     
- 3.  C/C++ Include path:(Settings):
-      ${env:MSYS2}/mingw64/include/
+ 3. Go to settings in Vs Code >  write includepath >
+     1. ${env:MSYS2}/mingw64/include/ > add item
      
- 4.  s
- 5.  s
+ 4.  Download code Zip from my repository
+    
