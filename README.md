@@ -7,8 +7,31 @@
     5. Install MSYS2
     6. Put Glad on MSYS2
     7. Edit Environment Variables for MSYS2
+       1. System Variable:
+          1. Variable Name : MSYS2
+          2. Variable Value : C:\msys64
+             
+       2. Go to Path > Edit > New > C:\msys64\mingw64\bin
+          
     8. Configure VS Code
-       1. Download Extension(C++)
-       2. Add IncludePath
- 3. 
- 4.  
+       1. Install Extension(C++)
+       2. Install Extension Run++
+       3. Code Runner
+       4. Add IncludePath
+          
+ 2. MSYS2 MINGW command:
+    pacman -Syu
+
+    pacman -S mingw-w64-x86_64-toolchain
+
+    pacman -S mingw-w64-x86_64-glew
+
+    pacman -S mingw-w64-x86_64-glfw
+
+    pacman -S mingw-w64-x86_64-freeglut
+    
+ 3.  C/C++ Include path:(Settings):
+      ${env:MSYS2}/mingw64/include/
+     
+ 4.  s
+ 5.  s
