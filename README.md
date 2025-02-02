@@ -20,18 +20,23 @@
        4. Add IncludePath
           
  2. MSYS2 MINGW command:
-    pacman -Syu
-
-    pacman -S mingw-w64-x86_64-toolchain
-
-    pacman -S mingw-w64-x86_64-glew
-
-    pacman -S mingw-w64-x86_64-glfw
-
-    pacman -S mingw-w64-x86_64-freeglut
     
- 3. Go to settings in Vs Code >  write includepath >
+    $ pacman -Syu
+
+    $ pacman -S mingw-w64-ucrt-x86_64-gcc
+
+    $ gcc --version
+
+    $ pacman -S mingw-w64-x86_64-glew
+
+    $ pacman -S mingw-w64-x86_64-glfw
+
+    $ pacman -S mingw-w64-x86_64-freeglut
+    
+    $ pacman -S mingw-w64-x86_64-toolchain
+    
+ 4. Go to settings in Vs Code >  write includepath >
      1. ${env:MSYS2}/mingw64/include/ > add item
      
- 4.  Download code Zip from my repository
+ 5.  Download code Zip from my repository
     
