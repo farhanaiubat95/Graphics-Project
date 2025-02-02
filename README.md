@@ -20,11 +20,12 @@
        4. Add IncludePath
           
  2. MSYS2 MINGW command:
+    
     $ pacman -Syu
 
     $ pacman -S mingw-w64-ucrt-x86_64-gcc
 
-    $ $ gcc --version
+    $ gcc --version
 
     $ pacman -S mingw-w64-x86_64-glew
 
