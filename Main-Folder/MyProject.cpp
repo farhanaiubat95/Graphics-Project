@@ -8,7 +8,7 @@
 // Structure to represent a mosquito
 struct Mosquito {
     float x, y;       // Position
-    float dx, dy;     // Direction of movement
+    float dx, dy;     // Direction of movement7
     float size;       // Size of the mosquito
 };
 
@@ -155,26 +155,26 @@ void displayText(const char* text, float x, float y) {
     }
 }
 
-// Function to draw a bowl with water inside
-void drawBowlWithWater(float x, float y, float radius) {
-    // Draw the bowl (brown color)
-    glColor3f(0.55f, 0.27f, 0.07f); // Brown color for the bowl
-    glBegin(GL_POLYGON);
-    for (int i = 0; i < 360; i++) {
-        float angle = i * 3.14159f / 180.0f;
-        glVertex2f(x + radius * cos(angle), y + radius * sin(angle));
-    }
-    glEnd();
+// // Function to draw a bowl with water inside
+// void drawBowlWithWater(float x, float y, float radius) {
+//     // Draw the bowl (brown color)
+//     glColor3f(0.55f, 0.27f, 0.07f); // Brown color for the bowl
+//     glBegin(GL_POLYGON);
+//     for (int i = 0; i < 360; i++) {
+//         float angle = i * 3.14159f / 180.0f;
+//         glVertex2f(x + radius * cos(angle), y + radius * sin(angle));
+//     }
+//     glEnd();
 
-    // Draw the water inside the bowl (sky blue color)
-    glColor3f(0.53f, 0.81f, 0.92f); // Sky blue color for the water
-    glBegin(GL_POLYGON);
-    for (int i = 0; i < 360; i++) {
-        float angle = i * 3.14159f / 180.0f;
-        glVertex2f(x + radius * 0.8f * cos(angle), y + radius * 0.8f * sin(angle));
-    }
-    glEnd();
-}
+//     // Draw the water inside the bowl (sky blue color)
+//     glColor3f(0.53f, 0.81f, 0.92f); // Sky blue color for the water
+//     glBegin(GL_POLYGON);
+//     for (int i = 0; i < 360; i++) {
+//         float angle = i * 3.14159f / 180.0f;
+//         glVertex2f(x + radius * 0.8f * cos(angle), y + radius * 0.8f * sin(angle));
+//     }
+//     glEnd();
+// }
 
 // Function to display instructions
 void displayInstructions() {
@@ -188,6 +188,7 @@ void displayInstructions() {
         "1. Keep water clean,",
         "2. cover containers,",
         "3. wear protective clothes."
+
     };
 
     float yPos = 0.9f;
@@ -287,7 +288,7 @@ void timer(int value) {
     glutTimerFunc(50, timer, 0); // Approx 20 FPS
 }
 
-// Keyboard function
+// Keyboard function7
 void keyboard(unsigned char key, int x, int y) {
     if (key == 's' || key == 'S') {
         // Start spraying
